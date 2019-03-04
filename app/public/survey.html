@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FriendFinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <header><h1><i class="fab fa-mailchimp"></i> Friend Finder</h1></header>
+    <hr>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Your name please.</label>
+          <input type="name" class="form-control" id="input1" placeholder="Tom Brady">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Link to Photo Image(Required)</label>
+          <input type="text" id="imageUpload" class="form-control" required="">
+  
+        </div> 
+        <hr>      
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">You like snow.</label>
+            <select class="form-control" id="q1">
+              <option selected>Select an Option...</option>
+              <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">You like winter.</label>
+            <select class="form-control" id="q2">
+              <option selected>Select an Option...</option>
+              <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">You feel alone even when you're in a room filled with people.</label>
+            <select class="form-control" id="q3">
+              <option selected>Select an Option...</option>
+              <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Outside is the place for you.</label>
+            <select class="form-control" id="q4">
+              <option selected>Select an Option...</option>  
+              <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">You enjoy events with big crowds.</label>
+            <select class="form-control" id="q5">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">People on social media rarely upset you.</label>
+            <select class="form-control" id="q6">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">It bothers you when the clouds turn to rain.</label>
+            <select class="form-control" id="q7">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">You like dogs more than cats.</label>
+            <select class="form-control" id="q8">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">You enjoy going to plays.</label>
+            <select class="form-control" id="q9">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">You love America.</label>
+            <select class="form-control" id="q10">
+                <option selected>Select an Option...</option>
+                <option value= '1'>1(Strongly Disagree)</option>
+                <option value= '2'>2</option>
+                <option value= '3'>3</option>
+                <option value= '4'>4</option>
+                <option value= '5'>5(Strongly Agree)</option>
+            </select>
+        </div>
+
+        <button type="button" id = "submit" class="btn btn-primary btn-lg btn-block">Find A Friend</button>
+        <hr>
+    </form>
+    
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/dfarnick/FriendFinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+    
+    <!-- popup modal instead of an alert-->
+    <div id= "myModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class= "modal-body">
+            <h2 id="friendName"></h2>
+            <img id= "friendPhoto" src="" alt= "">
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <script type="text/javascript">
+    
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+  
+      function validate() {
+          let valid = true;
+          $(".form-control").each(function(){
+              if($(this).val() === ""){
+                  valid = false;
+              }
+          });
+          return valid;
+        }
+    //   Here we grab the form elements
+      if (validate()){
+          var friendData = {
+              name: $("#input1").val().trim(),
+              photo: $("#imageUpload").val().trim(),
+              scores: [
+                  $("#q1").val(),
+                  $("#q2").val(),
+                  $("#q3").val(),
+                  $("#q4").val(),
+                  $("#q5").val(),
+                  $("#q6").val(),
+                  $("#q7").val(),
+                  $("#q8").val(),
+                  $("#q9").val(),
+                  $("#q10").val(),
+              ]
+        }
+       
+        console.log(friendData);
+        
+        ///ajax posts it 
+        $.post("/api/friends", friendData,
+         function(data){
+            ///get results
+            $("#friendName").text(data.name);
+            $("#friendPhoto").attr("src", data.photo)
+            //show the modal
+            $("#myModal").modal("show");
+         });
+        }
+        else {
+            ///add a prompt if it doesn't work....
+            alert("Hello! You need to fill in all boxes and answer ALL questions!! TRY AGAIN!");
+                console.log("Not working");
+            };
+        
+            //clear it
+            $("#input1").val('');
+            $("#imageUpload").val('');
+            $("#q1").val('');
+            $("#q2").val('');
+            $("#q3").val('');
+            $("#q4").val('');
+            $("#q5").val(''); 
+            $("#q6").val('');
+            $("#q7").val('');
+            $("#q8").val('');
+            $("#q9").val('');
+            $("#q10").val('');    
+        });
+    </script>
+</body>
+</html>
